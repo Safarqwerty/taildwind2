@@ -691,12 +691,12 @@ video {
   max-width: 36rem;
 }
 
-.origin-top-left {
-  transform-origin: top left;
-}
-
 .origin-bottom-left {
   transform-origin: bottom left;
+}
+
+.origin-top-left {
+  transform-origin: top left;
 }
 
 .-translate-x-1\/2 {
@@ -879,6 +879,15 @@ video {
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.6;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .hamburger-line {
