@@ -48,7 +48,7 @@ darkToggle.addEventListener('click', function() {
 })
 
 // pindahkan toogle sesuai mode
-// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+// Saat memuat halaman atau saat mengganti tema, sebaiknya tambahkan inline di `head` untuk menghindari FOUC
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     darkToggle.checked = true
   } else {
